@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Collections | ZENTRO KIDS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Offer announcement bar -->
+    <div class="offer-bar">
+        <p>🎉 Get 15% OFF your first order. Shop now!</p>
+    </div>
+
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="images/icon.png" alt="Zentro logo">
+                <h1>ZENTRO</h1>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+
+        <!-- Collections heading -->
+        <section class="collection-heading">
+            <h1>Explore Our Collections</h1>
+            <p>Adorable styles for every little moment!</p>
+        </section>
+        <!--Filter section comes to the left-->
+        <section class="collection-container">
+            <details class="filter-section" open>
+                <!-- <div class="filter-section"> -->
+                <summary>Filter Products</summary>
+
+
+                <h2>Category</h2>
+
+                <div class="filter-option category-filter">
+                    <input type="checkbox" value="Babywear">
+                    <label>Babywear</label>
+                </div>
+
+                <div class="filter-option category-filter">
+                    <input type="checkbox" value="Boys Wear">
+                    <label>Boys Wear</label>
+                </div>
+
+                <div class="filter-option category-filter">
+                    <input type="checkbox" value="Girls Wear">
+                    <label>Girls Wear</label>
+                </div>
+
+                <div class="filter-option category-filter">
+                    <input type="checkbox" value="Party Wear">
+                    <label>Party Wear</label>
+                </div>
+
+                <h2>Age Group</h2>
+
+                <div class="filter-option age-filter">
+                    <input type="checkbox" value="0-2">
+                    <label>0–2 Years</label>
+                </div>
+
+                <div class="filter-option age-filter">
+                    <input type="checkbox" value="2-4">
+                    <label>2–4 Years</label>
+                </div>
+
+                <div class="filter-option age-filter">
+                    <input type="checkbox" value="4-6">
+                    <label>4–6 Years</label>
+                </div>
+
+                <div class="filter-option age-filter">
+                    <input type="checkbox" value="6-8">
+                    <label>6–8 Years</label>
+                </div>
+
+                <h2>Colors</h2>
+
+                <div class="filter-option colors-filter">
+                    <input type="checkbox" value="Pink">
+                    <label>Pink</label>
+                </div>
+
+                <div class="filter-option colors-filter">
+                    <input type="checkbox" value="Blue">
+                    <label>Blue</label>
+                </div>
+
+                <div class="filter-option colors-filter">
+                    <input type="checkbox" value="Yellow">
+                    <label>Yellow</label>
+                </div>
+
+                <div class="filter-option colors-filter">
+                    <input type="checkbox" value="White">
+                    <label>White</label>
+                </div>
+
+                <div class="filter-option colors-filter">
+                    <input type="checkbox" value="Green">
+                    <label>Green</label>
+                </div>
+
+                <h2>Arrivals</h2>
+
+                <div class="filter-option arrivals-filter">
+                    <input type="checkbox" value="New">
+                    <label>New Arrivals</label>
+                </div>
+
+            </details>
+
+
+            <!--Product section comes to the right-->
+            <!-- Search bar -->
+
+
+            <div class="products-section">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search little styles...">
+                    <button id="searchBtn">Search</button>
+                </div>
+
+                <!-- Product heading -->
+                <div class="products-heading">
+                    <h2>Our Little Collections</h2>
+                    <p>Find the perfect outfit for your little one!</p>
+                </div>
+
+                <!-- Product cards -->
+                <div class="products-container">
+
+                    <div class="product-card" data-category="Babywear" data-age="0-2" data-color="White"  data-arrival="old">
+                        <img src="images/product2.jpg" alt="Tiny Sunshine Romper">
+                        <h3>Tiny Sunshine Romper</h3>
+                        <p>₹599</p>
+                    </div>
+
+                    <div class="product-card" data-category="Girls Wear" data-age="2-4" data-color="Pink"  data-arrival="new">
+                        <img src="images/product1.jpg" alt="Little Princess Frock">
+                        <h3>Little Princess Frock</h3>
+                        <p>₹799</p>
+                    </div>
+
+                    <div class="product-card" data-category="Boys Wear" data-age="4-6" data-color="Blue"  data-arrival="old">
+                        <img src="images/product3.jpg" alt="Happy Buddy T-Shirt">
+                        <h3>Happy Buddy T-Shirt</h3>
+                        <p>₹499</p>
+                    </div>
+
+                    <div class="product-card" data-category="Party Wear" data-age="6-8" data-color="Pink" data-arrival="new">
+                        <img src="images/product4.jpg" alt="Mini Explorer Set">
+                        <h3>Mini Explorer Set</h3>
+                        <p>₹999</p>
+                    </div>
+                    <p id="noProductsMessage" style="display: none;">
+                        No products found!
+                    </p>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <h2>ZENTRO KIDS</h2>
+
+        <p>Little Styles. Big Smiles.</p>
+
+        <p>&copy; 2026 Zentro Kids. All Rights Reserved.</p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

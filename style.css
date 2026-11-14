@@ -43,16 +43,18 @@ body {
     list-style: none;
     gap: 30px;
 }
-
-.navbar a {
+.nav-links a {
     text-decoration: none;
     color: #444;
-    font-weight: 500;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.navbar a:hover {
+.nav-links a:hover {
     color: #e88b9c;
 }
+
+
 #bannerImage.slide {
     animation: slideFromLeft 1.5s ease-in-out;
 }
@@ -625,7 +627,14 @@ transform: translateY(-8px);
     font-size: 15px;
     color: #5a3e45;
 }
-
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #5a3e45;
+    cursor: pointer;
+}
 /* =================================
    TABLET RESPONSIVENESS
 ================================= */
@@ -650,7 +659,10 @@ transform: translateY(-8px);
     }
 
 }
-
+/* .navbar {
+    background-color: lightblue !important;
+    border: 3px solid red !important;
+} */
 
 /* =================================
    MOBILE RESPONSIVENESS
@@ -704,6 +716,32 @@ transform: translateY(-8px);
 
     .filter-section summary {
         display: block;
+    }
+     .navbar {
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 20px 0;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .navbar ul.show-menu {
+        display: flex;
     }
 
 }

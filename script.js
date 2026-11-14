@@ -1,3 +1,16 @@
+
+let menuToggle = document.getElementById("menuToggle");
+let navLinks = document.querySelector(".nav-links");
+
+if (menuToggle && navLinks) {
+
+    menuToggle.addEventListener("click", function () {
+
+        navLinks.classList.toggle("show-menu");
+
+    });
+
+}
 // Get HTML elements
 let bannerImage = document.getElementById("bannerImage");
 if (bannerImage) {
@@ -283,7 +296,9 @@ colorCheckboxes.forEach(function (checkbox) {
     checkbox.addEventListener("change", applyFilters);
 });
 
-arrivalsCheckbox.addEventListener("change", applyFilters);
+if (arrivalsCheckbox) {
+    arrivalsCheckbox.addEventListener("change", applyFilters);
+}
 // //checkbox filter
 // let categoryCheckboxes = document.querySelectorAll(
 //     ".category-filter input[type='checkbox']"

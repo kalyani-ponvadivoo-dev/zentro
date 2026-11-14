@@ -163,7 +163,6 @@ body {
     left: 25px;
 }
 
-
 .right-arrow {
     right: 25px;
 }
@@ -241,8 +240,12 @@ html {
 }
 
 .category-card:hover {
-    transform: translateY(-8px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.category-card:hover,
+.product-card:hover{
+transform: translateY(-8px);
 }
 /* NEW ARRIVALS SECTION */
 
@@ -312,8 +315,7 @@ html {
     font-weight: 600;
     color: #e88b9c;
 }
-.product-card:hover {
-    transform: translateY(-8px);
+.product-card:hover {  
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 /* COLLECTION BUTTON */
@@ -527,9 +529,6 @@ html {
 }
 
 /* Contact information */
-
-
-
 /* Contact form */
 .offer-bar {
     background-color: #e88b9c;
@@ -591,7 +590,6 @@ html {
 }
 
 /* CONTACT INFORMATION */
-
 .contact-info {
     flex: 1;
     background-color: #fff0f2;
@@ -617,8 +615,6 @@ html {
     padding-bottom: 15px;
     border-bottom: 1px solid #f3d5dc;
 }
-
-
 .contact-detail h3 {
     font-size: 17px;
     color: #e88b9c;
@@ -662,7 +658,6 @@ html {
 
 @media screen and (max-width: 600px) {
 
-    /* Common mobile layout */
 
     .collection-container,
     .contact-container {
